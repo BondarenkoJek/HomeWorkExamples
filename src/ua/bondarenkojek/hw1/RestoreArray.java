@@ -7,7 +7,7 @@ public class RestoreArray {
         int[] array = {1, 2, -1, 4, 7, 6, -2, 4};
 
 //output 1 2 3 4 7 6 5 4
-        Arrays.stream(restore(array.length, array)).forEach(System.out::println);
+        System.out.println(Arrays.toString(restore(array.length, array)));
     }
 
     public static int[] restore(int length, int[] array) {

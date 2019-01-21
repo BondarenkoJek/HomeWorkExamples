@@ -2,7 +2,7 @@ package ua.bondarenkojek.hw1;
 
 public class Ranges {
     public static void main(String[] args) {
-        int[] array = {1, 2, 3, 5, 8, 9, 10, 13, 14, 15, 16};
+        int[] array = {1, 2, 3, 5, 8, 9, 10, 13, 14, 15 ,15, 17};
         printRanges(array.length, array);
     }
 
@@ -19,13 +19,13 @@ public class Ranges {
         for (int i = 1; i < length; i++) {
             if ((maxRange + 1) == array[i]) {
                 maxRange++;
-                if (i == length - 1) {
-                    appendRange(result, minRange, maxRange);
-                }
             } else {
                 appendRange(result, minRange, maxRange);
                 minRange = array[i];
                 maxRange = array[i];
+            }
+            if (i == length - 1) {
+                appendRange(result, minRange, maxRange);
             }
         }
 
