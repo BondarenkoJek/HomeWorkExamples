@@ -29,7 +29,7 @@ public class Ranges {
             }
         }
 
-//output [1 3][5][8 10][13 16]
+//output [1 3][5][8 10][13 15][15][17]
         System.out.println(result);
     }
 
