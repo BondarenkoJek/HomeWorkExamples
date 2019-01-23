@@ -1,19 +1,13 @@
-package ua.bondarenkojek.hw2.serialization.figure;
+package ua.bondarenkojek.hw2.serialization;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import ua.bondarenkojek.hw2.serialization.figure.Figure;
+
 import java.util.ArrayList;
 import java.util.List;
 
-@XmlRootElement(name = "group")
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Group {
-    @XmlElement(name = "figure")
     private List<Figure> figures;
 
-    @XmlElement(name = "group")
     private List<Group> groups;
 
     public List<Figure> getFigures() {

@@ -1,7 +1,7 @@
 package ua.bondarenkojek.hw2.serialization.util;
 
 import ua.bondarenkojek.hw2.serialization.figure.Figure;
-import ua.bondarenkojek.hw2.serialization.figure.Group;
+import ua.bondarenkojek.hw2.serialization.Group;
 
 import java.io.File;
 import java.io.FileWriter;

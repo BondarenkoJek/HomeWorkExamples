@@ -1,7 +1,7 @@
 package ua.bondarenkojek.hw2.serialization.util;
 
 import ua.bondarenkojek.hw2.serialization.figure.Figure;
-import ua.bondarenkojek.hw2.serialization.figure.Group;
+import ua.bondarenkojek.hw2.serialization.Group;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -43,14 +43,9 @@ public class JsonUtil {
                 builder.append(",");
             }
             builder.deleteCharAt(builder.length()-1);
-            builder.append("]");
-        }
-        builder.append("}");
-    }
 
-    private static void appendTabs(int tabs, StringBuilder builder) {
-        for (int i = 0; i < tabs; i++) {
-            builder.append("\t");
         }
+        builder.append("]");
+        builder.append("}");
     }
 }

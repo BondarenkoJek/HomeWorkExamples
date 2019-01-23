@@ -1,7 +1,6 @@
 package ua.bondarenkojek.hw2.serialization;
 
 import ua.bondarenkojek.hw2.serialization.figure.Circle;
-import ua.bondarenkojek.hw2.serialization.figure.Group;
 import ua.bondarenkojek.hw2.serialization.figure.Square;
 import ua.bondarenkojek.hw2.serialization.figure.Triangle;
 import ua.bondarenkojek.hw2.serialization.util.JsonUtil;
