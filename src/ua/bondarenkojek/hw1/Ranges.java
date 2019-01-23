@@ -2,7 +2,7 @@ package ua.bondarenkojek.hw1;
 
 public class Ranges {
     public static void main(String[] args) {
-        int[] array = {1, 2, 3, 5, 8, 9, 10, 13, 14, 15 ,15, 17};
+        int[] array = {1, 2, 3, 5, 8, 9, 10, 13, 14, 15, 15, 17};
         printRanges(array.length, array);
     }
 
@@ -10,7 +10,6 @@ public class Ranges {
         if (length < 1) {
             return;
         }
-
         StringBuilder result = new StringBuilder();
 
         int minRange = array[0];
@@ -35,10 +34,8 @@ public class Ranges {
 
     private static void appendRange(StringBuilder result, int min, int max) {
         result.append("[");
-        if (min == max) {
-            result.append(min);
-        } else {
-            result.append(min);
+        result.append(min);
+        if (min != max) {
             result.append(" ");
             result.append(max);
         }
