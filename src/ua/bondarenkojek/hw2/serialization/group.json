@@ -1,0 +1,34 @@
+{
+  "figures": [
+    {
+      "name": "Circle"
+    },
+    {
+      "name": "Square"
+    },
+    {
+      "name": "Triangle"
+    },
+    {
+      "name": "Circle"
+    }
+  ],
+  "groups": [
+    {
+      "figures": [
+        {
+          "name": "Circle"
+        },
+        {
+          "name": "Square"
+        },
+        {
+          "name": "Triangle"
+        },
+        {
+          "name": "Circle"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<group>
+    <figure>
+        <name>Circle</name>
+    </figure>
+    <figure>
+        <name>Square</name>
+    </figure>
+    <figure>
+        <name>Triangle</name>
+    </figure>
+    <figure>
+        <name>Circle</name>
+    </figure>
+    <group>
+        <figure>
+            <name>Circle</name>
+        </figure>
+        <figure>
+            <name>Square</name>
+        </figure>
+        <figure>
+            <name>Triangle</name>
+        </figure>
+        <figure>
+            <name>Circle</name>
+        </figure>
+    </group>
+</group>

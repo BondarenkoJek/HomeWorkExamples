@@ -11,11 +11,13 @@ public class RestoreArray {
     }
 
     public static int[] restore(int length, int[] array) {
+        int[] restoreArray = Arrays.copyOf(array, length);
+
         for (int i = 1; i < length - 1; i++) {
-            if (array[i] < 0) {
-                array[i] = (array[i - 1] + array[i + 1])/2;
+            if (restoreArray[i] < 0) {
+                restoreArray[i] = (restoreArray[i - 1] + restoreArray[i + 1])/2;
             }
         }
-        return array;
+        return restoreArray;
     }
 }
