@@ -25,8 +25,8 @@ public class Main {
 
         group.addGroup(group1);
 
-//        File file = new File("src/ua/bondarenkojek/hw2/serialization/group.xml");
-//        XmlUtil.writeToXml(file, group);
+        File fileXml = new File("src/ua/bondarenkojek/hw2/serialization/group.xml");
+        XmlUtil.writeToXml(fileXml, group);
 
         File fileJson = new File("src/ua/bondarenkojek/hw2/serialization/group.json");
         JsonUtil.writeToJson(fileJson, group);

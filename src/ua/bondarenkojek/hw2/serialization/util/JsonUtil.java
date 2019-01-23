@@ -12,8 +12,6 @@ public class JsonUtil {
         StringBuilder jsonResult = new StringBuilder();
         appendGroup(jsonResult, group, 0);
 
-        System.out.println(jsonResult);
-
         try(FileWriter fileWriter = new FileWriter(file)) {
             fileWriter.write(jsonResult.toString());
         } catch (IOException e) {
@@ -22,9 +20,6 @@ public class JsonUtil {
     }
 
     private static void appendGroup(StringBuilder builder, Group group, int tabs) {
-//        //add tabs for formatting
-//        appendTabs(tabs, builder);
-
         builder.append("{");
         builder.append("\"figures\": [");
         if (group.getFigures() != null) {
