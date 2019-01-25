@@ -7,9 +7,6 @@ public class Ranges {
     }
 
     public static void printRanges(int length, int[] array) {
-        if (length < 1) {
-            return;
-        }
         StringBuilder result = new StringBuilder();
 
         int minRange = array[0];
