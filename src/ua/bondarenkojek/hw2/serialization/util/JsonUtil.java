@@ -24,14 +24,14 @@ public class JsonUtil {
         builder.append("\"figures\": [");
         if (group.getFigures() != null) {
             for (Figure figure : group.getFigures()) {
-                String figureName = figure.getName();
-
-                if (figureName != null) {
-                    builder.append("{");
-                    builder.append("\"name\": \"");
-                    builder.append(figureName);
-                    builder.append("\"},");
-                }
+//                String figureName = figure.getName();
+//
+//                if (figureName != null) {
+//                    builder.append("{");
+//                    builder.append("\"name\": \"");
+//                    builder.append(figureName);
+//                    builder.append("\"},");
+//                }
             }
             builder.deleteCharAt(builder.length()-1);
         }

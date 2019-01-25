@@ -1,8 +1,5 @@
 package ua.bondarenkojek.hw2.serialization.figure;
 
-public class Square extends Figure {
+public class Square implements Figure {
 
-    public Square() {
-        super("Square");
-    }
 }

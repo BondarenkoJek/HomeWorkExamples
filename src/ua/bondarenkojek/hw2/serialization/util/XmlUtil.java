@@ -13,6 +13,8 @@ public class XmlUtil {
         xmlResult.append("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n");
         appendGroup(xmlResult, group, 0);
 
+
+
         try(FileWriter fileWriter = new FileWriter(file)) {
             fileWriter.write(xmlResult.toString());
         } catch (IOException e) {
@@ -28,26 +30,26 @@ public class XmlUtil {
 
         if (group.getFigures() != null) {
             for (Figure figure : group.getFigures()) {
-                String figureName = figure.getName();
+//                String figureName = figure.getName();
 
-                if (figureName != null) {
-                    //add tabs for formatting
-                    appendTabs(tabs, builder);
-
-                    builder.append("\t<figure>\n");
-
-                    //add tabs for formatting
-                    appendTabs(tabs, builder);
-
-                    builder.append("\t\t<name>");
-                    builder.append(figureName);
-                    builder.append("</name>\n");
-
-                    //add tabs for formatting
-                    appendTabs(tabs, builder);
-
-                    builder.append("\t</figure>\n");
-                }
+//                if (figureName != null) {
+//                    //add tabs for formatting
+//                    appendTabs(tabs, builder);
+//
+//                    builder.append("\t<figure>\n");
+//
+//                    //add tabs for formatting
+//                    appendTabs(tabs, builder);
+//
+//                    builder.append("\t\t<name>");
+//                    builder.append(figureName);
+//                    builder.append("</name>\n");
+//
+//                    //add tabs for formatting
+//                    appendTabs(tabs, builder);
+//
+//                    builder.append("\t</figure>\n");
+//                }
             }
         }
 

@@ -23,10 +23,8 @@ public class Ranges {
                 minRange = array[i];
                 maxRange = array[i];
             }
-            if (i == length - 1) {
-                appendRange(result, minRange, maxRange);
-            }
         }
+        appendRange(result, minRange, maxRange);
 
 //output [1 3][5][8 10][13 15][15][17]
         System.out.println(result);

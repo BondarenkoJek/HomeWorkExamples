@@ -7,7 +7,6 @@ import java.util.List;
 
 public class Group {
     private List<Figure> figures;
-
     private List<Group> groups;
 
     public List<Figure> getFigures() {
